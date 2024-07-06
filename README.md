@@ -74,7 +74,7 @@ private String name;
 @NotEmpty(message = "Please enter your address.")
 private String address;
 
-
+```
 Customer Validations:
 ```java
 
@@ -89,7 +89,7 @@ private String mobile;
 @NotNull(message = "Please select a customer type.")
 @Pattern(regexp = "Regular|VIP|Guest", message = "Customer type must be 'Regular', 'VIP', or 'Guest'.")
 private String customerType;
-
+```
 
 Employee Validations:
 ```java
