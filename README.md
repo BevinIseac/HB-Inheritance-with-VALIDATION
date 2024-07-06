@@ -56,11 +56,12 @@ The main class `Test` runs the application and demonstrates the inheritance stra
 public static void main(String[] args) {
     // Validation and saving logic here
 }
-Inheritance Strategies
+```
+### Inheritance Strategies
 The project demonstrates the following Hibernate inheritance strategies:
 
 Table Per Class
-Validations
+### Validations
 Field validations are implemented using JSR 380 (Bean Validation 2.0). The following constraints are demonstrated:
 
 Person Validations:
@@ -97,7 +98,9 @@ private String destination;
 
 @Future(message = "Invalid date. It should be provided as a future date.")
 private Date dtofjoining;
-Project Structure
+
+
+### Project Structure
 The project structure includes the following key components:
 
 Entities:
@@ -114,7 +117,9 @@ HBUtil: Utility class for obtaining SessionFactory.
 Main Class:
 
 Test: Main class for running the application.
-Contributing
+
+
+### Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 Fork the repository
@@ -122,7 +127,10 @@ Create a new branch (git checkout -b feature/your-feature)
 Commit your changes (git commit -am 'Add some feature')
 Push to the branch (git push origin feature/your-feature)
 Create a new Pull Request
-License
+
+
+
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
