@@ -64,7 +64,7 @@ Table Per Class
 ### Validations
 Field validations are implemented using JSR 380 (Bean Validation 2.0). The following constraints are demonstrated:
 
-Person Validations:
+### Person Validations:
 ```java
 @Size(max = 20, min = 3, message = "Invalid name. Size should be between 3 and 20.")
 @NotEmpty(message = "Please enter your name.")
@@ -75,7 +75,7 @@ private String name;
 private String address;
 
 ```
-Customer Validations:
+### Customer Validations:
 ```java
 
 @Email(message = "Invalid email address. Please enter a proper email ID.")
@@ -91,7 +91,7 @@ private String mobile;
 private String customerType;
 ```
 
-Employee Validations:
+### Employee Validations:
 ```java
 @Positive(message = "Invalid Salary. Value should be positive.")
 private float salary;
