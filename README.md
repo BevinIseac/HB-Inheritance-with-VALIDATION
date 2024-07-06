@@ -65,7 +65,7 @@ Table Per Class
 Field validations are implemented using JSR 380 (Bean Validation 2.0). The following constraints are demonstrated:
 
 Person Validations:
-
+```java
 @Size(max = 20, min = 3, message = "Invalid name. Size should be between 3 and 20.")
 @NotEmpty(message = "Please enter your name.")
 private String name;
@@ -73,8 +73,10 @@ private String name;
 @Size(min = 10, max = 100, message = "Address must be between 10 and 100 characters.")
 @NotEmpty(message = "Please enter your address.")
 private String address;
-Customer Validations:
 
+
+Customer Validations:
+```java
 
 @Email(message = "Invalid email address. Please enter a proper email ID.")
 @NotEmpty(message = "Please enter your email ID.")
@@ -87,8 +89,10 @@ private String mobile;
 @NotNull(message = "Please select a customer type.")
 @Pattern(regexp = "Regular|VIP|Guest", message = "Customer type must be 'Regular', 'VIP', or 'Guest'.")
 private String customerType;
-Employee Validations:
 
+
+Employee Validations:
+```java
 @Positive(message = "Invalid Salary. Value should be positive.")
 private float salary;
 
@@ -99,7 +103,7 @@ private String destination;
 @Future(message = "Invalid date. It should be provided as a future date.")
 private Date dtofjoining;
 
-
+```
 ### Project Structure
 The project structure includes the following key components:
 
